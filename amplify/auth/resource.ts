@@ -1,4 +1,5 @@
-import { defineAuth, secret } from '@aws-amplify/backend';
+import { defineAuth } from '@aws-amplify/backend';
+import { secret } from '@aws-amplify/backend';
 
 /**
  * Define and configure your auth resource
@@ -11,19 +12,21 @@ export const auth = defineAuth({
       google: {
         clientId: secret('GOOGLE_CLIENT_ID'),
         clientSecret: secret('GOOGLE_CLIENT_SECRET'),
-        scopes: ['email', 'profile', 'openid']
+        scopes: ['email', 'profile']
       },
       callbackUrls: [
         'http://localhost:8081/',
         'https://localhost:8081/',
         'exp://localhost:8081/',
-        'myfood2app://'
+        'myfood2app://',
+        'com.googleusercontent.apps.15561685556-7ugn77upvtiip19ksbi09q9ooegv8tq3://oauth2redirect'
       ],
       logoutUrls: [
         'http://localhost:8081/',
         'https://localhost:8081/',
         'exp://localhost:8081/',
-        'myfood2app://'
+        'myfood2app://',
+        'com.googleusercontent.apps.15561685556-7ugn77upvtiip19ksbi09q9ooegv8tq3://oauth2redirect'
       ]
     }
   }

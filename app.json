@@ -1,44 +1,48 @@
 {
   "expo": {
-    "name": "my_food2_app",
-    "slug": "my_food2_app",
-    "scheme": "myfood2app",
+    "name": "myfood2app",
+    "slug": "myfood2app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.adelsayed.my-food2-app",
-      "scheme": "myfood2app"
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "scheme": "myfood2app",
+      "associatedDomains": [
+        "applinks:ddf95a2d8e646bedb990.auth.me-south-1.amazoncognito.com"
+      ]
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.adelsayed.my_food2_app",
-      "intentFilters": [
-        {
-          "action": "VIEW",
-          "autoVerify": true,
-          "data": [
-            {
-              "scheme": "myfood2app"
-            }
-          ],
-          "category": ["BROWSABLE", "DEFAULT"]
-        }
-      ]
+      "package": "com.adelsayed.my_food2_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client"
+    ],
+    "scheme": "myfood2app",
+    "extra": {
+      "eas": {
+        "projectId": "9be0a0b3-0bbc-4088-93cb-63bc5f27f652"
+      }
     }
   }
 }

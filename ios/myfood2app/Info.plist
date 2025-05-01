@@ -7,7 +7,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>my_food2_app</string>
+    <string>myfood2app</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -32,9 +32,17 @@
           <string>com.adelsayed.my-food2-app</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>exp+myfood2app</string>
+        </array>
+      </dict>
     </array>
     <key>CFBundleVersion</key>
     <string>1</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
     <key>LSMinimumSystemVersion</key>
     <string>12.0</string>
     <key>LSRequiresIPhoneOS</key>
