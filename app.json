@@ -2,6 +2,7 @@
   "expo": {
     "name": "my_food2_app",
     "slug": "my_food2_app",
+    "scheme": "myfood2app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,14 +15,27 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.adelsayed.my-food2-app"
+      "bundleIdentifier": "com.adelsayed.my-food2-app",
+      "scheme": "myfood2app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.adelsayed.my_food2_app"
+      "package": "com.adelsayed.my_food2_app",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "myfood2app"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"

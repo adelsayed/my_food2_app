@@ -27,6 +27,8 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
+          <string>myfood2app</string>
+          <string>myfood2app</string>
           <string>com.adelsayed.my-food2-app</string>
         </array>
       </dict>
